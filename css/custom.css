@@ -1,0 +1,49 @@
+/*  
+
+  For all other browsers use meta for ideal viewport
+  <meta name="viewport" content="width = device-width, inital-scale = 1">
+
+
+IE browser @-ms-viewport rule
+
+You can use the @-ms-viewport rule in tandem with media queries to help 
+optimize your layout. Typically, you nest the @-ms-viewport rule inside the media query
+
+*/
+ 
+
+	@-ms-viewport{
+		width: device-width;
+	}
+
+
+
+
+/* 
+
+  selecting all media 
+
+
+*/
+
+	@media all and (max-width:100%){
+
+
+	}
+
+
+
+
+/*
+
+  but watch out for resolution size
+
+
+*/
+
+	@media 
+		(-webkit-min-device-pixel-ratio: 2), 
+		(min-resolution: 192dpi) { 
+    
+    /* Retina-specific stuff here */
+}
